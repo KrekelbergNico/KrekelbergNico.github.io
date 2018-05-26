@@ -2,23 +2,9 @@
  * Created by nicokrekelberg on 2/03/18.
  */
 
-let currencyFull = ["AUD = Australian Dollar", "BGN = Bulgarian Lev", "BRL = Brazilian Real", "CAD = Canadian Dollar",
-    "CHF = Swiss Franc","CNY = Renminbi (Chinese) Yuan","CZK = Czech Koruna","DKK = Danish Krone","EUR = Euro",
-    "GBP = Pound Sterling","HKD = Hong Kong Dollar","HRK = Croatian Kuna","HUF = Hungarian Forint",
-    "IDR = Indonesian Rupiah","ILS = Israeli New Shekel","INR = Indian Rupee","ISK = Icelandic Krona",
-    "JPY = Japanese Yen","KRW = South Korean Won","MXN = Mexican Peso","MYR = Malaysian Ringgit","NOK = Norwegian Krone",
-    "NZD = New Zealand Dollar","PHP = Philippine Piso","PLN = Polish Zloty","RON = Romanian Leu","RUB = Russian Ruble",
-    "SEK = Swedish Krona","SGD = Singapore Dollar","THB = Thai Baht","TRY = Turkish Lira","USD = United States Dollar",
-    "ZAR = South African Rand"];
-
 function stateList(){
-    let html = "";
-    currencyFull.forEach(function(currency){
-        html += "<p>"+currency+"</p>";
-    });
-    $("#listcountries").html(html).show();
+    $("#listcountries").toggle();
 }
-
 
 function convert() {
     let from = $("#fromCurrency").val();
