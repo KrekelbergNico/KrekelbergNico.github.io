@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
-  "start_url": "index.html",
+  "start_url": "https://krekelbergnico.github.io/index.html",
   "icons": [
     {
       "src": "assets/images/icons/icon-72x72.png",
