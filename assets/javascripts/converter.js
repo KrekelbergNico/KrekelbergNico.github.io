@@ -14,7 +14,7 @@ let currencyFull = ["AUD = Australian Dollar", "BGN = Bulgarian Lev", "BRL = Bra
 function stateList(){
     let html = "";
     currencyFull.forEach(function(currency){
-        html += "<p>currency</p>"
+        html += "<p>"+currency+"</p>";
     });
     $("#listcountries").html(html).show();
 }
