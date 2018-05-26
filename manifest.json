@@ -3,7 +3,7 @@
   "short_name": "Spendaid",
   "theme_color": "#2196f3",
   "background_color": "#cf2a27",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "https://krekelbergnico.github.io/index.html",
