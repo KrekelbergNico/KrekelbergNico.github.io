@@ -147,6 +147,7 @@ function switchToCostsField() {
     $("i.fa-plus").show();
     $("i.fa-times").hide();
     $("i.fa-save").hide();
+    $("i.fa-home").show();
 }
 
 
@@ -156,6 +157,7 @@ function switchToNewField() {
     $("i.fa-plus").hide();
     $("i.fa-times").show();
     $("i.fa-save").show();
+    $("i.fa-home").hide();
 }
 
 
