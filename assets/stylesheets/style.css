@@ -95,6 +95,7 @@ label, input, textarea, select, option {
 .new-cost {
     padding-top: 30px;
     padding-bottom: 30px;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -117,6 +118,7 @@ a.disable {
     text-decoration: none;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 50%;
@@ -134,6 +136,7 @@ a.disable {
 .cancelcost {
     padding-top: 30px;
     padding-bottom: 30px;
+    position: fixed;
     right: 0;
     bottom: 0;
     width: 50%;
