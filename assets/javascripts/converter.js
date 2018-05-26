@@ -25,10 +25,7 @@ function convert() {
             $('#toAmount').val(amount * res.rates[to]);
         }
     }).catch(error => console.error(error));
-
 }
-
-
 
 function fillInCountries() {
     currencies.forEach(function (element) {

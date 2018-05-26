@@ -1,7 +1,6 @@
 //TODO: FIX GETCONVERTERRESULTS FETCHES
 
 if ('serviceWorker' in navigator) {
-
     navigator.serviceWorker.register('./service-worker.js', {scope: './'})
         .then(function (registration) {
             console.log("SW Registered");

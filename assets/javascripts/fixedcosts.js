@@ -11,7 +11,6 @@ request.onupgradeneeded = function (e) {
     let os = db.createObjectStore("costs", {keyPath: "id", autoIncrement: true});
 };
 
-
 request.onsucces = function (e) {
     db = e.target.result;
 };
@@ -30,8 +29,6 @@ request.onsucces = function (e) {
     db = e.target.result;
     deleteActualCost();
 };
-
-
 
 let saveCost = function (name, color, price, frequency) {
     let cost = {
@@ -120,9 +117,6 @@ function fillInColors() {
 }
 
 function processCost() {
-    //als fields leeg zijn, doe er dan niks mee
-
-    //indexdb, get list, and push this one to it.
     let namecost = $("#namecost").val().toLowerCase();
     let colornewcost = $("#colornewcost").val();
     let pricenewcost = $("#pricenewcost").val();
@@ -134,8 +128,6 @@ function processCost() {
         saveCost(namecost, colornewcost, pricenewcost, frequencycost);
     }
 }
-
-
 
 /* REGION MAIN */
 function switchToCostsField() {
