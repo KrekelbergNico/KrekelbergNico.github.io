@@ -26,6 +26,12 @@ let cacheFiles = [
     './assets/images/icons/icon-192x192.png',
     './assets/images/icons/icon-384x384.png',
     './assets/images/icons/icon-512x512.png',
+    './assets/images/icons/android-chrome192x192.png',
+    './assets/images/icons/android-chrome512x512.png',
+    './assets/images/icons/apple-touch-icon.png',
+    './assets/images/icons/mstile-150x150.png',
+    './assets/images/icons/browserconfig.xml',
+    './assets/images/icons/safari-pinned-tab.svg',
 ];
 
 
