@@ -61,7 +61,8 @@ let retrieveCosts = function () {
         });
         $("#totalcosts").html("€"+Math.round(weektotal * 100) / 100+"/w   €"+Math.round(monthtotal * 100) / 100+"/m   €"+Math.round(yeartotal * 100) / 100+"/y");
         $("#costs").html(html);
-        switchToCostsField();
+        //switchToCostsField();
+        switchToNewField();
     };
 };
 
@@ -138,6 +139,7 @@ function processCost() {
 
 
 /* REGION MAIN */
+/*
 function switchToCostsField() {
     $("#newfixedcost").hide();
     $("#allthecosts").show();
@@ -148,7 +150,6 @@ function switchToCostsField() {
     $("i.fa-home").show();
     $("i.fa-times").hide();
     $("i.fa-save").hide();
-
 }
 
 
@@ -159,6 +160,18 @@ function switchToNewField() {
     $("i.fa-home").hide();
     $("i.fa-times").show();
     $("i.fa-save").show();
+}*/
+
+function switchToNewField() {
+    $("#namecost").val("");
+    $("#pricenewcost").val("");
+    $("#errors").html("");
+    $("#allthecosts").toggle();
+    $("#newfixedcost").toggle();
+    $("i.fa-plus").toggle();
+    $("i.fa-home").toggle();
+    $("i.fa-times").toggle();
+    $("i.fa-save").toggle();
 
 }
 
