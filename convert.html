@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="author" content="Nico Krekelberg">
+    <meta name="description" content="Keep track of your money">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Spendaid - Convert</title>
+</head>
+<body>
+<header>
+    <h1>Spend <i class="fas fa-plus-square"></i><a href="index.html"><i class="fas fa-home"></i></a></h1>
+
+</header>
+<p id="offline"></p>
+<form>
+<label for="fromCurrency">From</label>
+<select id="fromCurrency">
+</select>
+<label for="toCurrency">To</label>
+<select id="toCurrency">
+</select>
+
+<label for="fromAmount">Amount from</label>
+<input type="number" id="fromAmount" value="1"/>
+
+<label for="toAmount">Amount to</label>
+<input type="number" id="toAmount" disabled/>
+</form>
+<script src="assets/javascripts/jquery-3.1.1.min.js"></script>
+<script src="assets/javascripts/main.js"></script>
+<script src="assets/javascripts/converter.js"></script>
+</body>
+</html>

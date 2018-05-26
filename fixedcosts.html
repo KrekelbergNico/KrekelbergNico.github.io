@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="author" content="Nico Krekelberg">
+    <meta name="description" content="Keep track of your money">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Spendaid - Fixed Costs</title>
+</head>
+<body>
+<header>
+    <h1>Spend <i class="fas fa-plus-square"></i><a href="index.html"><i class="fas fa-home" ></i></a></h1>
+</header>
+
+<fieldset id="allthecosts">
+
+<div id="totalcost"><p id="totalcosts"></p></div>
+<div id="total"></div>
+<div id="costs">
+</div>
+<footer>
+        <a href="#" id="createnewcost">
+            <div class="new-cost"><p>Create New Cost</p></div>
+        </a>
+</footer>
+</fieldset>
+<fieldset id="newfixedcost">
+    <form method="POST" id="costform">
+        <fieldset>
+            <p id="errors"></p>
+            <label for="namecost">Name Cost:</label>
+            <input type="text" id="namecost" name="namecost">
+
+            <label for="colornewcost">Color:</label>
+            <select id="colornewcost" name="colornewcost">
+            </select>
+
+            <label for="pricenewcost">Price:</label>
+            <input type="number" id="pricenewcost" name="pricenewcost">
+
+
+            <label for="timenewcost">Frequency:</label>
+            <select id="timenewcost" name="timenewcost">
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+
+        </fieldset>
+    </form>
+
+
+    <footer>
+        <a href="#">
+            <div class="savecost"><p>Save</p></div>
+        </a>
+        <a href="fixedcosts.html">
+            <div class="cancelcost"><p>Cancel</p></div>
+        </a>
+    </footer>
+
+</fieldset>
+<script src="assets/javascripts/jquery-3.1.1.min.js"></script>
+<script src="assets/javascripts/main.js"></script>
+<script src="assets/javascripts/fixedcosts.js"></script>
+
+</body>
+</html>
