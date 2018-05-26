@@ -185,8 +185,8 @@ p.categorybox {
 
     input, select {
         border: 1px solid black;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     input, select, option {
