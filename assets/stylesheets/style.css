@@ -1,10 +1,10 @@
 .fa, i.fas, i.far{
     font-size: 2rem;
+    cursor: pointer;
 }
 
 i.fa-times, i.fa-save{
     display: none;
-    cursor: pointer;
 }
 
 i.fa-plus-square, i.fa-home, i.fa-plus, i.fa-times, i.fa-save{
