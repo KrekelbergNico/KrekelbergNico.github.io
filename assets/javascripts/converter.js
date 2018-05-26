@@ -3,6 +3,11 @@
  */
 
 function stateList(){
+    if($(".countryList").data() === "Show Currency Name List"){
+        $(".countryList").data("Hide Currency Name List");
+    } else {
+        $(".countryList").data("Show Currency Name List");
+    }
     $("#listcountries").toggle();
 }
 
