@@ -1,9 +1,3 @@
-/*<div id="cost">
-    <p class="categorybox" style="background-color: pink"></p><p class="title">Huur huis</p><p class="price">$600/month</p>
-    </div>
-*/
-//TODO: TOTAL PRICE
-
 /* REGION INDEXEDDB */
 let request = window.indexedDB.open("costDatabase", 1);
 let db = null;
@@ -150,17 +144,23 @@ function switchToCostsField() {
     $("#namecost").val("");
     $("#pricenewcost").val("");
     $("#errors").html("");
+    $("i.fa-plus").show();
+    $("i.fa-times").hide();
+    $("i.fa-save").hide();
 }
 
 
 function switchToNewField() {
     $("#allthecosts").hide();
     $("#newfixedcost").show();
+    $("i.fa-plus").hide();
+    $("i.fa-times").show();
+    $("i.fa-save").show();
 }
 
 
 $(document).ready(function () {
     fillInColors();
-    $("#createnewcost").on('click', switchToNewField);
-    $("div.savecost").on('click', processCost);
+    $("i.fa-plus").on('click', switchToNewField);
+    $("i.fa-save").on('click', processCost);
 });
