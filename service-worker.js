@@ -26,20 +26,15 @@ let cacheFiles = [
     './assets/images/icons/icon-192x192.png',
     './assets/images/icons/icon-384x384.png',
     './assets/images/icons/icon-512x512.png',
-    './assets/images/icons/android-chrome192x192.png',
-    './assets/images/icons/android-chrome512x512.png',
-    './assets/images/icons/apple-touch-icon.png',
-    './assets/images/icons/mstile-150x150.png',
-    './assets/images/icons/browserconfig.xml',
-    './assets/images/icons/safari-pinned-tab.svg',
+    './assets/images/icons/apple-touch-icon-57x57.png',
+    './assets/images/icons/apple-touch-icon-72x72.png',
+    './assets/images/icons/apple-touch-icon-76x76.png',
+    './assets/images/icons/apple-touch-icon-114x114.png',
+    './assets/images/icons/apple-touch-icon-120x120.png',
+    './assets/images/icons/apple-touch-icon-144x144.png',
+    './assets/images/icons/apple-touch-icon-152x152.png',
+    './assets/images/icons/apple-touch-icon-180x180.png',
 ];
-
-
-/*
-
- ];
- */
-
 
 
 function converterResults(){
