@@ -17,6 +17,16 @@ i.fa-home, i.fa-plus, i.fa-times, i.fa-save{
     margin-right: 10px;
 }
 
+.countryList {
+    text-align: center;
+    width: 60%;
+    border: 1px solid black;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 30px;
+    background-color: #cf2a27;
+    color: white;
+}
 
 
 h1 {

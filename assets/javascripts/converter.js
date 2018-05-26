@@ -11,7 +11,13 @@ let currencyFull = ["AUD = Australian Dollar", "BGN = Bulgarian Lev", "BRL = Bra
     "SEK = Swedish Krona","SGD = Singapore Dollar","THB = Thai Baht","TRY = Turkish Lira","USD = United States Dollar",
     "ZAR = South African Rand"];
 
-
+function stateList(){
+    let html = "";
+    currencyFull.forEach(function(currency){
+        html += "<p>currency</p>"
+    });
+    $("#listcountries").html(html).show();
+}
 
 
 function convert() {
@@ -56,4 +62,5 @@ $(document).ready(function () {
     $("#fromCurrency").on('change', convert);
     $("#toCurrency").on('change', convert);
     $("#fromAmount").on('keyup', convert);
+    $(".countryList").on('click', stateList)
 });
