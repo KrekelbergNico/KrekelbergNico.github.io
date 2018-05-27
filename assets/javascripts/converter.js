@@ -35,18 +35,8 @@ function fillInCountries() {
     convert()
 }
 
-function checkConnection(){
-    let online = navigator.onLine;
-    if(!online){
-        $("#offline").html("You need connection to use this converter");
-    } else {
-        $("#offline").html("");
-    }
-}
-
 $(document).ready(function () {
     fillInCountries();
-    checkConnection();
     $("#fromCurrency").on('change', convert);
     $("#toCurrency").on('change', convert);
     $("#fromAmount").on('keyup', convert);

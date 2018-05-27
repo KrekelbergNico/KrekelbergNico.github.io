@@ -170,7 +170,7 @@ p.categorybox {
     border: 1px solid black;
 }
 
-#offline, #errors{
+#errors{
     text-align: center;
     color: red;
     font-weight: bold;
