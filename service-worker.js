@@ -1,4 +1,4 @@
-let cacheName = 'v2';
+let cacheName = 'v3';
 let cacheFiles = [
     './',
     './assets/javascripts/jquery-3.1.1.min.js',
