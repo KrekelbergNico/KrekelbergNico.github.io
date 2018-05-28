@@ -63,10 +63,7 @@ self.addEventListener('activate', function(e){
     e.waitUntil(
         caches.keys().then(function(cacheNames){
             return Promise.all(cacheNames.map(function(thisCacheName){
-                console.log(thisCacheName + " " + cacheName);
-                console.log(typeof thisCacheName);
                 if(thisCacheName !== cacheName){
-                    console.log("sw not the same");
                     return caches.delete(thisCacheName);
                 }
             }))
