@@ -40,7 +40,7 @@ let cacheFiles = [
     './assets/images/splash/apple-1242x2148.png',
     './assets/images/splash/apple-1536x2048.png',
     './assets/images/splash/apple-1668x2224.png',
-    './assets/images/splash/apple-2018x2732.png',
+    './assets/images/splash/apple-2048x2732.png',
 ];
 
 
