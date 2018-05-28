@@ -1,0 +1,1 @@
+**SPENDAID - Nico Krekelberg - Mobile Web Apps - Howest**
