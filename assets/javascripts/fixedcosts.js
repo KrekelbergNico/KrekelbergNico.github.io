@@ -93,7 +93,6 @@ function transferToYear(record){
 }
 
 let deleteActualCost = function (id) {
-    console.log("deleting cost");
     let trans = db.transaction("costs", "readwrite");
     let os = trans.objectStore("costs");
     os.delete(parseInt(id)).onsuccess = function (e){

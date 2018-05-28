@@ -60,10 +60,8 @@ self.addEventListener('install', function(e){
 
 
 self.addEventListener('activate', function(e){
-
     e.waitUntil(
         caches.keys().then(function(cacheNames){
-            console.log(caches);
             return Promise.all(cacheNames.map(function(thisCacheName){
                 if(thisCacheName !== cacheName){
                     return caches.delete(thisCacheName);
