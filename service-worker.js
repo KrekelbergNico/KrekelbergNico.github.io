@@ -1,4 +1,4 @@
-let cacheName = 'v3';
+let cacheName = 'v2';
 let cacheFiles = [
     './',
     './assets/javascripts/jquery-3.1.1.min.js',
@@ -64,6 +64,7 @@ self.addEventListener('activate', function(e){
         caches.keys().then(function(cacheNames){
             return Promise.all(cacheNames.map(function(thisCacheName){
                 if(thisCacheName !== cacheName){
+                    console.log("sw not the same");
                     return caches.delete(thisCacheName);
                 }
             }))
