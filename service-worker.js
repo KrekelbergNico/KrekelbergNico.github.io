@@ -34,6 +34,13 @@ let cacheFiles = [
     './assets/images/icons/apple-touch-icon-144x144.png',
     './assets/images/icons/apple-touch-icon-152x152.png',
     './assets/images/icons/apple-touch-icon-180x180.png',
+    './assets/images/splash/apple-320x480.png',
+    './assets/images/splash/apple-640x960.png',
+    './assets/images/splash/apple-750x1334.png',
+    './assets/images/splash/apple-768x1024.png',
+    './assets/images/splash/apple-1242x2208.png',
+    './assets/images/splash/apple-1536x2008.png',
+    './assets/images/splash/apple-1536x2048.png',
 ];
 
 
