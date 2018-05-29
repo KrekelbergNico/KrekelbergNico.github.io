@@ -101,6 +101,7 @@ let deleteActualCost = function (id) {
 };
 
 let deleteCost = function(identifier){
+    console.log(this);
     let id = identifier.getAttribute("data-id");
     deleteActualCost(id);
 };
