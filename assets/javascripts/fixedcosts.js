@@ -54,7 +54,7 @@ let retrieveCosts = function () {
             weektotal += transferToWeek(record);
             monthtotal += transferToMonth(record);
             yeartotal += transferToYear(record);
-            html += "<div id='cost'><p class='categorybox' style='background-color:" + record.color + "'></p><p class='title'>" + record.name + "</p><p class='price'>€" + record.price + "/" + record.frequency + " <i class='fas fa-trash' data-id="+record.id+"></i></p></div>";
+            html += "<div id='cost'><p class='categorybox' style='background-color:" + record.color + "'></p><p class='title'>" + record.name + "</p><p class='price'>€" + record.price + "/" + record.frequency + " <a href='#' id='"+record.id+"'><i class='fas fa-trash'></i></a></p></div>";
         });
         $("#totalcosts").html("€"+Math.round(weektotal * 100) / 100+"/w   €"+Math.round(monthtotal * 100) / 100+"/m   €"+Math.round(yeartotal * 100) / 100+"/y");
         $("#costs").html(html);
@@ -100,9 +100,11 @@ let deleteActualCost = function (id) {
     }
 };
 
-let deleteCost = function(identifier){
-    console.log(this);
-    let id = identifier.getAttribute("data-id");
+let deleteCost = function(e){
+    e.preventDefault();
+    let id = e.target.id;
+    //console.log(identifier);
+    //let id = identifier.getAttribute("data-id");
     deleteActualCost(id);
 };
 
@@ -159,5 +161,5 @@ $(document).ready(function () {
     fillInColors();
     $("i.fa-plus").on('click', switchToNewField);
     $("i.fa-save").on('click', processCost);
-    $("#cost").on('click', 'i.fa-trash', deleteCost);
+    $("#cost").on('click', 'a', deleteCost);
 });
