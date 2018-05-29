@@ -46,16 +46,20 @@ Header always set Referrer-Policy "same-origin"<br/>
 Header always set X-XSS-Protection "1; mode=block" <br/>
 -> X-XSS-Protection (cross-site scripting protection)<br/>
       
-Header always set Content-Security-Policy: "default-src 'self' 'unsafe-inline' https://api.fixer.io"<br/>
+Header always set Content-Security-Policy: "default-src 'self' https://api.fixer.io; script-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; frame-ancestors 'self'"<br/>
 -> declares which resources are allowed. Also included my api call his resources<br/>
 
 
 **'Observatory by mozilla'-scan results**<br/>
 Tests passed: 11/11<br/>
-Score 110/100<br/>
+Score 115/100<br/>
 Will put screenshots under "Observatory_results" folder<br/>
 or go to: https://observatory.mozilla.org/analyze/spendaid.be
 
 **Extra information**<br/>
 My API ends at 1 june. So the converter might not work anymore if this is tested on a later date.<br/>
-To see the working of it, take a look at the demo named Spendaid_KrekelbergNico.mp4
+To see the working of it, take a look at the demo named Spendaid_KrekelbergNico.mp4<br/>
+I'm aware that the HTML is not valid and that it responses with an error about the media for the apple splash page. But unfortunatly this is the only way to make it work on iOS. I've tried other methods but they were no success. So I'm forced to implement them and make my HTML unvalid because of it.
+
+
+
