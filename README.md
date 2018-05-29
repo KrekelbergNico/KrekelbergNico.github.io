@@ -58,4 +58,4 @@ or go to: https://observatory.mozilla.org/analyze/spendaid.be
 
 **Extra information**<br/>
 My API ends at 1 june. So the converter might not work anymore if this is tested on a later date.<br/>
-To see the working of it, take a look at the demo.
+To see the working of it, take a look at the demo named Spendaid_KrekelbergNico.mp4
