@@ -53,12 +53,12 @@ Header always set Content-Security-Policy: "default-src 'self' https://api.fixer
 **'Observatory by mozilla'-scan results**<br/>
 Tests passed: 11/11<br/>
 Score 115/100<br/>
-Will put screenshots under "Observatory_results" folder<br/>
+Will put screenshots under "Observatory_results" folder (in the zip)<br/>
 or go to: https://observatory.mozilla.org/analyze/spendaid.be
 
 **Extra information**<br/>
 My API ends at 1 june. So the converter might not work anymore if this is tested on a later date.<br/>
-To see the working of it, take a look at the demo named Spendaid_KrekelbergNico.mp4<br/>
+To see the working of it, take a look at the demo named Spendaid_KrekelbergNico.mp4 (in the zip)<br/>
 I'm aware that the HTML is not valid and that it responses with an error about the media for the apple splash page. But unfortunatly this is the only way to make it work on iOS. I've tried other methods but they were no success. So I'm forced to implement them and make my HTML unvalid because of it.
 
 
