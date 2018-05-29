@@ -190,6 +190,123 @@ p.categorybox {
     padding: 5px 5px 5px 5px;
     text-align: center;
 }
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.beige {
+    background-color: beige;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.turquoise {
+    background-color: turquoise;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.darkred {
+    background-color: darkred;
+}
+
+.darkblue {
+    background-color: darkblue;
+}
+
+.darkgreen {
+    background-color: darkgreen;
+}
+
+.darkorange {
+    background-color: darkorange;
+}
+
+.darkgrey {
+    background-color: darkgrey;
+}
+
+.darkgoldenrod {
+    background-color: darkgoldenrod;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.lightyellow {
+    background-color: lightyellow;
+}
+
+.lightpink {
+    background-color: lightpink;
+}
+
+.lightgrey {
+    background-color: lightgrey;
+}
+
+.lightgoldenrodyellow {
+    background-color: lightgoldenrodyellow;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 

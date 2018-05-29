@@ -54,7 +54,8 @@ let retrieveCosts = function () {
             weektotal += transferToWeek(record);
             monthtotal += transferToMonth(record);
             yeartotal += transferToYear(record);
-            html += "<div id='cost'><p class='categorybox' style='background-color:" + record.color + "'></p><p class='title'>" + record.name + "</p><p class='price'>€" + record.price + "/" + record.frequency + " <a href='#' id='"+record.id+"'><i class='fas fa-trash'></i></a></p></div>";
+            let colorClass = record.color;
+            html += "<div id='cost'><p class='categorybox "+colorClass+"''></p><p class='title'>" + record.name + "</p><p class='price'>€" + record.price + "/" + record.frequency + " <a href='#' id='"+record.id+"'><i class='fas fa-trash'></i></a></p></div>";
         });
         $("#totalcosts").html("€"+Math.round(weektotal * 100) / 100+"/w   €"+Math.round(monthtotal * 100) / 100+"/m   €"+Math.round(yeartotal * 100) / 100+"/y");
         $("#costs").html(html);
