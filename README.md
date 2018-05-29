@@ -46,7 +46,7 @@ Header always set Referrer-Policy "same-origin"<br/>
 Header always set X-XSS-Protection "1; mode=block" <br/>
 -> X-XSS-Protection (cross-site scripting protection)<br/>
       
-Header always set Content-Security-Policy: "default-src 'self' https://api.fixer.io"<br/>
+Header always set Content-Security-Policy: "default-src 'self' 'unsafe-inline' https://api.fixer.io"<br/>
 -> declares which resources are allowed. Also included my api call his resources<br/>
 
 
