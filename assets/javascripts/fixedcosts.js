@@ -103,6 +103,7 @@ let deleteActualCost = function (id) {
 let deleteCost = function(e){
     e.preventDefault();
     let id = e.target.id;
+    console.log(id);
     //console.log(identifier);
     //let id = identifier.getAttribute("data-id");
     deleteActualCost(id);
@@ -161,5 +162,5 @@ $(document).ready(function () {
     fillInColors();
     $("i.fa-plus").on('click', switchToNewField);
     $("i.fa-save").on('click', processCost);
-    $("#cost").on('click', 'a', deleteCost);
+    $("#costs").on('click', 'a', deleteCost);
 });
