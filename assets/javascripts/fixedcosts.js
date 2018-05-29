@@ -102,7 +102,7 @@ let deleteActualCost = function (id) {
 
 let deleteCost = function(e){
     e.preventDefault();
-    let id = e.target.id;
+    let id = $(this).attr('id');
     console.log(id);
     //console.log(identifier);
     //let id = identifier.getAttribute("data-id");
